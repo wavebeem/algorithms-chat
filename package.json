@@ -1,0 +1,30 @@
+{
+  "name": "algorithms-chat",
+  "version": "1.0.0",
+  "description": "let's talk about algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wavebeem/algorithms-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wavebeem/algorithms-chat/issues"
+  },
+  "homepage": "https://github.com/wavebeem/algorithms-chat#readme",
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4"
+  },
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.3.0"
+  }
+}
