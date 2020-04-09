@@ -1,13 +1,16 @@
 export function stackCreate() {
-  return { type: "stack", node: undefined };
-}
-
-function nodeCreate(item, next) {
-  return { type: "stack.node", item, next };
+  return {
+    type: "stack",
+    node: undefined,
+  };
 }
 
 export function stackPush(stack, item) {
-  stack.node = nodeCreate(item, stack.node);
+  stack.node = {
+    type: "stack.node",
+    item: item,
+    next: stack.node,
+  };
 }
 
 export function stackPop(stack) {

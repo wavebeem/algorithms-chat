@@ -3,7 +3,11 @@ export function stackCreate() {
 }
 
 export function stackPush(stack, item) {
-  return { type: "stack.node", item, next: stack };
+  return {
+    type: "stack.node",
+    item: item,
+    next: stack,
+  };
 }
 
 export function stackPop(stack) {
