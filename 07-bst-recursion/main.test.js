@@ -1,10 +1,4 @@
-import {
-  bstCreate,
-  bstNodeCreate,
-  bstAdd,
-  bstEach,
-  bstIterator,
-} from "./answers";
+import { bstCreate, bstNodeCreate, bstAdd, bstEach, bstIterator } from "./main";
 
 test("bstCreate returns an object with `root`", () => {
   expect(bstCreate()).toEqual({ root: null });
