@@ -2,6 +2,8 @@ import { bstCreate, bstNodeCreate, bstAdd, bstEach, bstIterator } from "./main";
 
 test("bstCreate returns an object with `root`", () => {
   expect(bstCreate()).toEqual({ root: null });
+  expect(bstCreate(1)).toEqual({ root: 1 });
+  expect(bstCreate(2)).toEqual({ root: 2 });
 });
 
 test("bstNodeCreate returns an object with `item`, `left`, `right`", () => {
